@@ -3,6 +3,9 @@
 !.clang-format
 !.gitignore
 
+# Bazel output directories
+bazel-*
+
 # Build artifacts. These files should not be in our repo. Even if we have to
 # use pre-built third-party libraries, they should be introduced via as a bazel
 # external repo. 
