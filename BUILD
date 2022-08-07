@@ -13,8 +13,14 @@ license(
 exports_files(["LICENSE"])
 
 filegroup(
-  name = "srcs",
-  srcs = glob(["**/*"], exclude=["bazel-*", ".*"]),
-  applicable_licenses = [":license"],
-  visibility = ["//tools/oss-compliance:__pkg__"],
+    name = "srcs",
+    srcs = glob(
+        ["**/*"],
+        exclude = [
+            "bazel-*",
+            ".*",
+        ],
+    ),
+    applicable_licenses = [":license"],
+    visibility = ["//tools/oss-compliance:__pkg__"],
 )
